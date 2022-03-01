@@ -1,4 +1,4 @@
-package LinkedListt;
+
 
 import java.util.Scanner;
 
@@ -7,7 +7,7 @@ class Node
 	int data; // data part
 	Node next; // here created object type as Node
 	
-	Node insertEnd(int d,Node head)
+	Node Creation(int d,Node head)
 	{
 		Node newnode = new Node();
 		newnode.data=d;
@@ -54,20 +54,11 @@ public class CreationofLinkedlist {
 		{
 			System.out.println("enter the element to be inserted");
 			int d=sc.nextInt();
-			head=obj.insertEnd(d,head); //calliing a function
+			head=obj.Creation(d,head); //calliing a function
 		}
 			
 			
-			
-//			
-//			
-//			 d=100;
-//			head=obj.insertEnd(d,head); //calliing a function
-//			
-//			 d=130;
-//			head=obj.insertEnd(d,head); //calliing a function
-			
-			
+		
 			obj.display(head);
 		
 	}
